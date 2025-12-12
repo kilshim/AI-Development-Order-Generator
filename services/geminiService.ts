@@ -21,11 +21,11 @@ AI 개발자가 명확하게 이해할 수 있도록 엄격한 구조를 따라�
 
 export const generateGeminiPrompt = async (idea: string, userApiKey?: string): Promise<string> => {
   try {
-    // Use the provided user key first, then fall back to environment variable
+    // Priority: User provided key -> Environment variable
     const apiKey = userApiKey || process.env.API_KEY;
     
     if (!apiKey) {
-      throw new Error("API Key가 없습니다. 상단의 설정 메뉴에서 API Key를 입력해주세요.");
+      throw new Error("API Key가 없습니다. 상단의 설정 메뉴에서 API Key를 입력하거나 환경 변수를 확인해주세요.");
     }
 
     const ai = new GoogleGenAI({ apiKey });

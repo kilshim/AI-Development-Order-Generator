@@ -24,8 +24,6 @@ export default function App() {
       if (mode === GenerationMode.GEMINI) {
         // Attempt Gemini generation
         try {
-           // Pass the userApiKey to the service. 
-           // If userApiKey is null, the service will try process.env.API_KEY or throw an error.
            result = await generateGeminiPrompt(idea, userApiKey || undefined);
         } catch (err: any) {
            console.error("Gemini failed", err);
