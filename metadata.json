@@ -1,0 +1,5 @@
+{
+  "name": "AI 개발 주문서 생성기",
+  "description": "AI 엔지니어에게 전달할 전문가 수준의 소프트웨어 개발 프롬프트를 생성하는 도구입니다. 정적 룰 기반 생성과 Gemini 기반 생성을 모두 지원합니다.",
+  "requestFramePermissions": []
+}
