@@ -71,8 +71,16 @@ export default function App() {
           )}
         </main>
 
-        <footer className="mt-20 text-center text-gray-600 text-sm pb-8">
+        <footer className="mt-20 text-center text-gray-600 text-sm pb-8 flex flex-col items-center gap-2">
           <p>Powered by React, Tailwind, and Gemini 2.5 Flash</p>
+          <a 
+            href="https://xn--design-hl6wo12cquiba7767a.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-[#00FFFF] hover:text-[#CCFF00] transition-colors duration-300 font-medium"
+          >
+            떨림과울림Design.com
+          </a>
         </footer>
       </div>
     </div>
